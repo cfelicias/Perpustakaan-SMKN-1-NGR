@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Peminjaman - Perpustakaan SMKN 1 Negara</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#konten">Lewati ke konten utama</a>
+
+    <!-- HEADER -->
+    <header class="header">
+      <div class="container navbar">
+        <a href="index.html" class="logo">
+          <img
+            src="../assets/images/smkna.png"
+            alt=""
+            class="logo-img"
+            width="50"
+            height="50"
+          />
+          <span>Perpustakaan SMKN 1 NEGARA</span>
+        </a>
+
+        <nav class="nav-menu" aria-label="Menu utama">
+          <a href="index.html">Beranda</a>
+          <a href="buku.html">Buku</a>
+          <a href="anggota.html">Anggota</a>
+          <a href="peminjaman.html" aria-current="page">Peminjaman</a>
+          <a href="login.html" class="btn btn-primary">Login</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="konten">
+      <section class="page-header">
+        <div class="container">
+          <h1>Peminjaman Buku</h1>
+          <p>Informasi Peminjaman Buku Di Perpustakaan SMKN 1 Negara.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="alert" role="note">
+            <strong>Informasi:</strong>
+            Silakan <strong><a href="login.html">login</a></strong> terlebih
+            dahulu untuk melakukan peminjaman buku.
+          </div>
+
+          <!-- TABLE -->
+          <div class="table-wrapper">
+            <table class="table-stack">
+              <caption class="visually-hidden">
+                Riwayat peminjaman buku
+              </caption>
+
+              <thead>
+                <tr>
+                  <th scope="col">No</th>
+                  <th scope="col">Buku</th>
+                  <th scope="col">Tanggal Pinjam</th>
+                  <th scope="col">Tanggal Kembali</th>
+                  <th scope="col">Status</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td data-label="No">1</td>
+                  <td data-label="Buku">Dasar-Dasar Pemrograman Web</td>
+                  <td data-label="Tanggal pinjam">
+                    <time datetime="2026-09-01">01 September 2026</time>
+                  </td>
+                  <td data-label="Jatuh tempo">
+                    <time datetime="2026-09-08">08 September 2026</time>
+                  </td>
+                  <td data-label="Status">
+                    <span class="status-borrowed">Dipinjam</span>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td data-label="No">2</td>
+                  <td data-label="Buku">Belajar HTML dan CSS</td>
+                  <td data-label="Tanggal pinjam">
+                    <time datetime="2026-08-25">25 Agustus 2026</time>
+                  </td>
+                  <td data-label="Jatuh tempo">
+                    <time datetime="2026-09-01">01 September 2026</time>
+                  </td>
+                  <td data-label="Status">
+                    <span class="status-returned">Dikembalikan</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- LOGIN PROMPT -->
+          <div class="login-prompt">
+            <div>
+              <h2>Ingin meminjam buku?</h2>
+              <p>Login sebagai anggota untuk melakukan transaksi peminjaman.</p>
+            </div>
+            <a href="login.html" class="btn btn-primary">Login sekarang</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer-content">
+        <div>
+          <p class="footer-title">Perpustakaan SMKN 1 Negara</p>
+          <p>
+            Sistem Informasi Perpustakaan Sekolah, Untuk Mendukung Budaya
+            Literasi & Pembelajaran.
+          </p>
+        </div>
+
+        <nav aria-label="Menu footer">
+          <p class="footer-heading">Menu</p>
+          <a href="index.html">Beranda</a>
+          <a href="buku.html">Buku</a>
+          <a href="anggota.html">Anggota</a>
+          <a href="peminjaman.html">Peminjaman</a>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Perpustakaan SMKN 1 Negara.</p>
+      </div>
+    </footer>
+  </body>
+</html>

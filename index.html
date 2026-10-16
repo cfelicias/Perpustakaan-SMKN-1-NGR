@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beranda - Perpustakaan SMKN 1 Negara</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Literata:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#konten">Lewati ke konten utama</a>
+
+    <!-- HEADER -->
+    <header class="header">
+      <div class="container navbar">
+        <a href="index.html" class="logo">
+          <img
+            src="assets/images/smkna.png"
+            alt=""
+            class="logo-img"
+            width="50"
+            height="50"
+          />
+          <span>Perpustakaan SMKN 1 NEGARA</span>
+        </a>
+
+        <nav class="nav-menu" aria-label="Menu utama">
+          <a href="index.html" aria-current="page">Beranda</a>
+          <a href="buku.html">Buku</a>
+          <a href="anggota.html">Anggota</a>
+          <a href="peminjaman.html">Peminjaman</a>
+          <a href="login.html" class="btn btn-primary">Login</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="konten">
+      <!-- HERO -->
+      <section class="hero">
+        <div class="container hero-content">
+          <div class="hero-text">
+            <h1>Selamat Datang Di Sistem Perpustakaan SMKN 1 Negara</h1>
+
+            <p class="hero-hours">
+              <strong>Jam Operasional:</strong> 07.30 - 15.00 WITA (Senin -
+              Jum'at)
+            </p>
+
+            <!-- Diisi dan ditampilkan oleh main.js (tersembunyi bila JavaScript mati) -->
+            <p class="open-status" id="status-buka" hidden>
+              <span class="open-dot" aria-hidden="true"></span>
+              <span class="open-text"></span>
+            </p>
+
+            <p class="hero-desc">
+              Discover our extensive collection of books and resources.
+              Technology, programming, novels, and more await you! <br />
+              <strong>Login</strong> to borrow books and manage your account.
+            </p>
+
+            <div class="hero-buttons">
+              <a href="buku.html" class="btn btn-primary">Jelajahi Buku</a>
+              <a href="login.html" class="btn btn-outline">Login Anggota</a>
+            </div>
+          </div>
+
+          <div class="hero-image">
+            <p class="shelf-hint">Pilih Buku Dari Rak</p>
+
+            <nav class="shelf" aria-label="Rak buku pilihan">
+              <a
+                class="spine"
+                href="detail-buku.html#web"
+                aria-label="Lihat detail: Dasar-Dasar Pemrograman Web"
+              >
+                <span class="spine-title">Pemrograman Web</span>
+              </a>
+              <span class="spine" aria-hidden="true"></span>
+              <a
+                class="spine"
+                href="detail-buku.html#html"
+                aria-label="Lihat detail: Belajar HTML dan CSS"
+              >
+                <span class="spine-title">Belajar HTML dan CSS</span>
+              </a>
+              <span class="spine" aria-hidden="true"></span>
+              <a
+                class="spine"
+                href="detail-buku.html#js"
+                aria-label="Lihat detail: JavaScript untuk Pemula"
+              >
+                <span class="spine-title">JavaScript Pemula</span>
+              </a>
+              <span class="spine" aria-hidden="true"></span>
+              <a
+                class="spine"
+                href="detail-buku.html#php"
+                aria-label="Lihat detail: PHP Native dan MySQL"
+              >
+                <span class="spine-title">PHP Native &amp; MySQL</span>
+              </a>
+              <span class="spine" aria-hidden="true"></span>
+              <span class="spine" aria-hidden="true"></span>
+            </nav>
+          </div>
+        </div>
+      </section>
+
+      <!-- STATISTIK -->
+      <section class="section" aria-labelledby="judul-statistik">
+        <div class="container">
+          <div class="section-title">
+            <h2 id="judul-statistik">Library's Statistic</h2>
+            <p>Explore, learn, &amp; enjoy reading through our services!</p>
+          </div>
+
+          <div class="stats-grid">
+            <div class="stat-card">
+              <p class="stat-value">1.250</p>
+              <p class="stat-label">Total Buku</p>
+            </div>
+
+            <div class="stat-card">
+              <p class="stat-value">850</p>
+              <p class="stat-label">Anggota</p>
+            </div>
+
+            <div class="stat-card">
+              <p class="stat-value">320</p>
+              <p class="stat-label">Buku Dipinjam</p>
+            </div>
+
+            <div class="stat-card">
+              <p class="stat-value">15</p>
+              <p class="stat-label">Kategori</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- BUKU POPULER -->
+      <section class="section section-gray" aria-labelledby="judul-populer">
+        <div class="container">
+          <div class="section-header">
+            <h2 id="judul-populer">Buku Populer</h2>
+            <a href="buku.html" class="link-more">Lihat Semua Buku</a>
+          </div>
+
+          <div class="book-grid">
+            <article class="book-card">
+              <div class="book-cover">
+                <div class="book-art cover-photo">
+                  <img
+                    src="assets/images/web.jpg"
+                    alt="Sampul buku Dasar-Dasar Pemrograman Web"
+                    width="132"
+                    height="184"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+              <div class="book-info">
+                <span class="book-category">Pemrograman</span>
+                <h3>Dasar-Dasar Pemrograman Web</h3>
+                <p class="book-author">I Dewa Putu Adi Pranayoga</p>
+                <a href="detail-buku.html#web" class="btn btn-small btn-outline"
+                  >Lihat detail</a
+                >
+              </div>
+            </article>
+
+            <article class="book-card">
+              <div class="book-cover">
+                <div class="book-art cover-photo">
+                  <img
+                    src="assets/images/tech.jpg"
+                    alt="Sampul buku Belajar HTML dan CSS"
+                    width="132"
+                    height="184"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+              <div class="book-info">
+                <span class="book-category">Teknologi</span>
+                <h3>Belajar HTML dan CSS</h3>
+                <p class="book-author">Andi Setiawan</p>
+                <a
+                  href="detail-buku.html#html"
+                  class="btn btn-small btn-outline"
+                  >Lihat detail</a
+                >
+              </div>
+            </article>
+
+            <article class="book-card">
+              <div class="book-cover">
+                <div class="book-art cover-photo">
+                  <img
+                    src="assets/images/edu.jpg"
+                    alt="Sampul buku JavaScript untuk Pemula"
+                    width="132"
+                    height="184"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+              <div class="book-info">
+                <span class="book-category">Pemrograman</span>
+                <h3>JavaScript untuk Pemula</h3>
+                <p class="book-author">Budi Santoso</p>
+                <a href="detail-buku.html#js" class="btn btn-small btn-outline"
+                  >Lihat detail</a
+                >
+              </div>
+            </article>
+
+            <article class="book-card">
+              <div class="book-cover">
+                <div class="book-art cover-photo">
+                  <img
+                    src="assets/images/db.jpg"
+                    alt="Sampul buku PHP Native dan MySQL"
+                    width="132"
+                    height="184"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+              <div class="book-info">
+                <span class="book-category">Pemrograman</span>
+                <h3>PHP Native &amp; MySQL</h3>
+                <p class="book-author">Ahmad Fauzi</p>
+                <a href="detail-buku.html#php" class="btn btn-small btn-outline"
+                  >Lihat detail</a
+                >
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer-content">
+        <div>
+          <p class="footer-title">Perpustakaan SMKN 1 Negara</p>
+          <p>
+            Sistem Informasi Perpustakaan Sekolah, Untuk Mendukung Budaya
+            Literasi &amp; Pembelajaran.
+          </p>
+        </div>
+
+        <nav aria-label="Menu footer">
+          <p class="footer-heading">Menu</p>
+          <a href="index.html">Beranda</a>
+          <a href="buku.html">Buku</a>
+          <a href="anggota.html">Anggota</a>
+          <a href="peminjaman.html">Peminjaman</a>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Perpustakaan SMKN 1 NEGARA.</p>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js" defer></script>
+  </body>
+</html>
